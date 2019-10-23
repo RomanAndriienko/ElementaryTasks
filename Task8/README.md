@@ -1,0 +1,1 @@
+java -jar Task8-1.0-SNAPSHOT.jar args0 args1
