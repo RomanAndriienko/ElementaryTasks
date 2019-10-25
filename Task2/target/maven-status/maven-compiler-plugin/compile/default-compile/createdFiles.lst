@@ -1,5 +1,8 @@
-com\soft\homework\envelope\Envelope.class
+com\soft\homework\validator\EnvelopeValidator.class
+com\soft\homework\service\Comparator.class
+com\soft\homework\service\EnvelopeComparator.class
+com\soft\homework\model\Parcel.class
 com\soft\homework\App.class
+com\soft\homework\model\Envelope.class
+com\soft\homework\AppLauncher.class
 com\soft\homework\validator\Validator.class
-com\soft\homework\AppFacade.class
-com\soft\homework\envelope\EnvelopeComparator.class

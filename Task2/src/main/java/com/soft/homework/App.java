@@ -1,9 +1,10 @@
 package com.soft.homework;
 
+import java.util.InputMismatchException;
+
 public class App {
-    public static void main(String[] args) {
-        AppFacade appFacade = new AppFacade();
-        appFacade.startApp();
+    public static void main(String[] args) throws InputMismatchException {
+        AppLauncher.start();
     }
 }
 
