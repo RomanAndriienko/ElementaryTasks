@@ -11,12 +11,12 @@ public class ChessBoardValidator implements Validator {
     public boolean validate(ChessBoard chessBoard) {
         boolean valid = true;
 
-        if (!validateWidth(chessBoard.getWidth())) {
+        if (validateSide(chessBoard.getWidth())) {
             logger.info("Width is not valid. It can be in the range of 2 to 100.");
             valid = false;
         }
 
-        if (!validateHeight(chessBoard.getHeight())) {
+        if (validateSide(chessBoard.getHeight())) {
             logger.info("Height is not valid. It can be in the range of 2 to 100.");
             valid = false;
         }
@@ -29,11 +29,7 @@ public class ChessBoardValidator implements Validator {
         return valid;
     }
 
-    private boolean validateWidth(int width) {
-        return width > 1 && width < 101;
-    }
-
-    private boolean validateHeight(int height) {
-        return height > 1 && height < 101;
+    private boolean validateSide(int side) {
+        return side <= 1 || side >= 101;
     }
 }

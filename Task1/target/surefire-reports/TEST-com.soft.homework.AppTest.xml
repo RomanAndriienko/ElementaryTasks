@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.soft.homework.AppTest" time="0.053" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.soft.homework.AppTest" time="0.09" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Roman\AppData\Local\Temp\surefire4115608951556817290\surefirebooter7425301398080137884.jar C:\Users\Roman\AppData\Local\Temp\surefire4115608951556817290 2019-10-25T23-35-50_598-jvmRun1 surefire4542624916711319442tmp surefire_02929472512357014204tmp"/>
+    <property name="sun.java.command" value="C:\Users\Roman\AppData\Local\Temp\surefire4053474187178495025\surefirebooter4671197501896517791.jar C:\Users\Roman\AppData\Local\Temp\surefire4053474187178495025 2019-10-30T01-36-48_272-jvmRun1 surefire3227058268046184748tmp surefire_03060514194157477243tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\Roman\IdeaProjects\Task1\target\test-classes;C:\Users\Roman\IdeaProjects\Task1\target\classes;C:\Users\Roman\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Roman\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Roman\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Roman\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Roman\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\Roman\.m2\repository\org\projectlombok\lombok\1.18.10\lombok-1.18.10.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Roman"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Roman\AppData\Local\Temp\surefire4115608951556817290\surefirebooter7425301398080137884.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Roman\AppData\Local\Temp\surefire4053474187178495025\surefirebooter4671197501896517791.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,5 +61,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.soft.homework.AppTest" time="0.002"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.soft.homework.AppTest" time="0.018"/>
 </testsuite>

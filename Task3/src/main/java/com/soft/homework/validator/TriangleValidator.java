@@ -7,11 +7,12 @@ import org.slf4j.LoggerFactory;
 public class TriangleValidator implements Validator {
     private static final Logger logger = LoggerFactory.getLogger(TriangleValidator.class);
 
+    //TODO check all
     @Override
     public boolean validate(Shape shape) {
         boolean valid = true;
 
-        //TODO
+
         double sideA = shape.getSides().get(0);
         double sideB = shape.getSides().get(1);
         double sideC = shape.getSides().get(2);
@@ -22,10 +23,10 @@ public class TriangleValidator implements Validator {
         }
 
 
-
         return valid;
     }
 
+    //TODO can create triangle or not
     private boolean canCreate(Shape shape) {
         boolean can = true;
 
@@ -33,7 +34,7 @@ public class TriangleValidator implements Validator {
         return can;
     }
 
-    private boolean validateSide (double side) {
+    private boolean validateSide(double side) {
         boolean valid = true;
 
         double max = Double.MAX_VALUE - 1;

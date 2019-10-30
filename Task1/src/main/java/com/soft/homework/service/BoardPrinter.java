@@ -1,6 +1,8 @@
 package com.soft.homework.service;
 
 
+import com.soft.homework.model.ChessBoard;
+
 public interface BoardPrinter {
-    void printBoard(int width, int height);
+    void printBoard(ChessBoard chessBoard);
 }

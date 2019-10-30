@@ -1,11 +1,11 @@
 package com.soft.homework;
 
+import com.soft.homework.validator.EnvelopeValidator;
+import com.soft.homework.validator.Validator;
 import com.soft.homework.model.Envelope;
 import com.soft.homework.model.Parcel;
 import com.soft.homework.service.Comparator;
 import com.soft.homework.service.EnvelopeComparator;
-import com.soft.homework.validator.EnvelopeValidator;
-import com.soft.homework.validator.Validator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

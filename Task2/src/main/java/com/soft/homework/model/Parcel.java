@@ -3,8 +3,21 @@ package com.soft.homework.model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Parcel {
     private static final Logger logger = LoggerFactory.getLogger(Parcel.class);
+
+    private List<Double> sides = new ArrayList<>();
+
+    public List<Double> getSides() {
+        return sides;
+    }
+
+    public void setSides(List<Double> sides) {
+        this.sides = sides;
+    }
 
     public abstract double getMaxSide();
 

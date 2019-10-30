@@ -1,8 +1,7 @@
 package com.soft.homework.validator;
 
-import com.soft.homework.model.Envelope;
-
+import com.soft.homework.model.Parcel;
 
 public interface Validator {
-    boolean validate(Envelope envelope);
+    boolean validate (Parcel parcel);
 }

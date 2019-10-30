@@ -1,31 +1,52 @@
 package com.soft.homework;
 
+import com.soft.homework.dto.ShapeDTO;
 import com.soft.homework.model.Shape;
 import com.soft.homework.model.Triangle;
 import com.soft.homework.output.Output;
 import com.soft.homework.output.TriangleOutput;
 import com.soft.homework.service.Sorting;
 import com.soft.homework.service.SortingByArea;
+import com.soft.homework.validator.TriangleValidator;
+import com.soft.homework.validator.Validator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
 class AppLauncher {
-    static void start() {
-        List<Shape> shapes = new ArrayList<>();
+    private static final Logger logger = LoggerFactory.getLogger(AppLauncher.class);
 
-        Shape shape1 = new Triangle("name1", 1, 2, 3);
-        Shape shape2 = new Triangle("name2", 4, 4, 4);
-        Shape shape3 = new Triangle("name3", 1, 1, 1);
+    private AppLauncher() {
+    }
 
-        shapes.add(shape1);
-        shapes.add(shape2);
-        shapes.add(shape3);
+    //TODO all
+    static void start(String [] args) {
+        Shape firstTriangle = new Triangle(args[0], Double.parseDouble(args[1]),
+                Double.parseDouble(args[2]), Double.parseDouble(args[3]));
 
-        Sorting sorting = new SortingByArea();
-        sorting.sort(shapes);
+        Shape secondTriangle = new Triangle(args[4], Double.parseDouble(args[5]),
+                Double.parseDouble(args[6]), Double.parseDouble(args[7]));
 
-        Output out = new TriangleOutput();
-        out.printShape(shapes);
+        Shape thirdTriangle = new Triangle(args[8], Double.parseDouble(args[9]),
+                Double.parseDouble(args[10]), Double.parseDouble(args[11]));
+
+
+        Validator validator = new TriangleValidator();
+
+        if (validator.validate(firstTriangle) && validator.validate(secondTriangle)
+                && validator.validate(thirdTriangle)) {
+            List<Shape> shapes = new ArrayList<>();
+            shapes.add(firstTriangle);
+            shapes.add(secondTriangle);
+            shapes.add(thirdTriangle);
+
+            Sorting sorting = new SortingByArea();
+            List<ShapeDTO> shapeDTOS = sorting.sort(shapes);
+
+            Output output = new TriangleOutput();
+            output.printShape(shapeDTOS);
+        }
     }
 }

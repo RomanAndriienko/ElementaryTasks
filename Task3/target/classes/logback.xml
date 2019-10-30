@@ -5,7 +5,7 @@
     <!--    Console appender-->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%d{dd MMM yyyy:HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
+            <pattern>%msg%n</pattern>
         </encoder>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>INFO</level>
@@ -22,7 +22,7 @@
     <appender name="ErrorFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${USER_HOME}/errors.log</file>
         <encoder>
-            <pattern>%d{dd MMM yyyy;HH:mm:ss.SSS} [%thread] %-5level %logger{35} %caller{3} - %msg%n</pattern>
+            <pattern>%d{dd MMM yyyy;HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
         </encoder>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>ERROR</level>
@@ -47,7 +47,7 @@
     <appender name="WarningFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${USER_HOME}/warning.log</file>
         <encoder>
-            <pattern>%d{dd MMM yyyy;HH:mm:ss.SSS} [%thread] %-5level %logger{35} %caller{3} - %msg%n</pattern>
+            <pattern>%d{dd MMM yyyy;HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
         </encoder>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>WARN</level>

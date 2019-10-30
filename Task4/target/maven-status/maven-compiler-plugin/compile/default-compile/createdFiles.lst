@@ -1,0 +1,6 @@
+com\soft\homework\service\ReplaceStrings.class
+com\soft\homework\service\CountStrings.class
+com\soft\homework\App.class
+com\soft\homework\validator\PathValidator.class
+com\soft\homework\AppLauncher.class
+com\soft\homework\validator\Validator.class

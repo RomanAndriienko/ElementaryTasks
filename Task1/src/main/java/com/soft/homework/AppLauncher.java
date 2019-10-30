@@ -26,7 +26,7 @@ class AppLauncher {
 
                 if (validator.validate(chessBoard)) {
                     BoardPrinter printer = new ChessBoardPrinter();
-                    printer.printBoard(width, height);
+                    printer.printBoard(chessBoard);
                 }
 
             } catch (NumberFormatException e) {
