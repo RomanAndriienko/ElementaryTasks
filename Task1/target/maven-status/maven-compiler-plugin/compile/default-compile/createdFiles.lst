@@ -1,7 +1,0 @@
-com\soft\homework\model\ChessBoard.class
-com\soft\homework\App.class
-com\soft\homework\service\BoardPrinter.class
-com\soft\homework\service\ChessBoardPrinter.class
-com\soft\homework\AppLauncher.class
-com\soft\homework\validator\ChessBoardValidator.class
-com\soft\homework\validator\Validator.class
